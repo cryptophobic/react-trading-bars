@@ -2,7 +2,6 @@ import React from "react";
 import OHLCChartZoom from "./OHLCChartZoom.tsx";
 import {useBars} from "../data/UseBars.tsx";
 
-
 const BarsConsumer: React.FC = () => {
     const { data, loading, error } = useBars();
 

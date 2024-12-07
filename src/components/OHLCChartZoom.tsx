@@ -1,7 +1,6 @@
 import { FC, useEffect, useRef, useState } from "react";
 import {Chunk} from "../Types.ts";
 
-
 const OHLCChartZoom: FC<Chunk> = ({ Bars }) => {
 
     const canvasRef = useRef<HTMLCanvasElement | null>(null);
