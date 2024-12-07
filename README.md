@@ -1,3 +1,7 @@
+https://github.com/user-attachments/assets/7b8c9d9a-a00d-44d9-a72f-d6b31added12
+
+Dragging mouse to zoom, doubleclick to reset.
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
