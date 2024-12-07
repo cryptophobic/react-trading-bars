@@ -90,6 +90,20 @@ const OHLCChartZoom: FC<Chunk> = ({ Bars }) => {
                     );
                 });
 
+                const yStep = (maxPrice - minPrice) / 10;
+                ctx.fillStyle = "rgba(0, 0, 0, 0.8)";
+                for (let i = 0; i <= 10; i++) {
+                    const price = minPrice + i * yStep;
+                    const y = mapY(price);
+                    ctx.fillText(price.toFixed(5), margin - 40, y);
+                    ctx.beginPath();
+                    ctx.moveTo(margin, y);
+                    ctx.lineTo(canvas.width - margin, y);
+                    ctx.strokeStyle = '#ddd';
+                    ctx.stroke();
+                }
+
+
                 // Draw selection area
                 if (selection) {
                     ctx.fillStyle = "rgba(0, 0, 255, 0.2)";
